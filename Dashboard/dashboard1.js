@@ -560,9 +560,9 @@ function map_builder()
     document.body.appendChild(script);
 }
 
- function initMap() {
+ function initMap() 
+ {
      var locations =[];
-     //var labels =[];
      for( i = 0; i < data._members.length; i++ ) 
     {
         //console.log(data._members[i]._last_location);
@@ -610,21 +610,6 @@ function map_builder()
         // Note: The code uses the JavaScript Array.prototype.map() method to
         // create an array of markers based on a given "locations" array.
         // The map() method here has nothing to do with the Google Maps API.
-       /* var markers = new google.maps.Marker({
-        for( i = 0; i < data._members.length; i++ ) 
-        {
-          if(data._members[i]._last_location != null && data._members[i]._last_location != undefined && data._members[i]._last_location != '')
-         {
-          //console.log(data._members[i]._last_location[0]);
-          var position = new google.maps.LatLng(data._members[i]._last_location[0], data._members[i]._last_location[1]);
-          bounds.extend(position);
-          markers = new google.maps.Marker({
-            position: position,
-            map: map,
-            title: data._members[i]._name,
-        });
-       } // if 
-        }); */
         var markers = locations.map(function(location, i) {
           return new google.maps.Marker({
             position: location,
@@ -635,52 +620,7 @@ function map_builder()
         // Add a marker clusterer to manage the markers.
         var markerCluster = new MarkerClusterer(map, markers,
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-      }
-      
-
-function initialize() {
-    var map;
-    var bounds = new google.maps.LatLngBounds();
-    var mapOptions = {
-        mapTypeId: 'roadmap',
-        zoom : 19,
-        //center: new google.maps.LatLng(mapping_details.mapCentre.lattitude, mapping_details.mapCentre.longitude)
-        center: new google.maps.LatLng(12.9988212,77.6410099)
-    };
-
-    // Display a map on the page
-    map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-    //map.setTilt(45); 
-
-    // Display multiple markers on a map
-    var infoWindow = new google.maps.InfoWindow(), marker, i;
-    var image = 'http://maps.google.com/mapfiles/ms/icons/green-dot.png';
-    // Loop through our array of markers & place each one on the map
-    for( i = 0; i < data._members.length; i++ ) 
-    {
-        //console.log(data._members[i]._last_location);
-      if(data._members[i]._last_location != null && data._members[i]._last_location != undefined && data._members[i]._last_location != '')
-      {
-          //console.log(data._members[i]._last_location[0]);
-        var position = new google.maps.LatLng(data._members[i]._last_location[0], data._members[i]._last_location[1]);
-        bounds.extend(position);
-        marker = new google.maps.Marker({
-            position: position,
-            map: map,
-            title: data._members[i]._name,
-            icon: image
-        });
-       } // if 
-       
     }
-
-    // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
-     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-       // this.setZoom(mapping_details.zoomLevel);
-        google.maps.event.removeListener(boundsListener);
-    });
-     
-}
 
 window.onload = chat_widget_handler();
 
