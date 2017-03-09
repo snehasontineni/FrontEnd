@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loktra</title>
+<link rel="stylesheet" href="/Common_files/css/bootstrap.min.css">
+<link rel="stylesheet" href="/Common_files/font_awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/Common_files/css/fontello.css"/>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="dashboard.css"/>
+<body>
+<section>
+<div class="container">
+<div class="row" id="header_row">
+<div class="col-md-4 col-lg-4" id="dashboard_head">Dashboard</div>
+<div class="col-md-8 col-lg-8" id="dashboard_right_column">
+<div class="row" id="powered_head">Powered by</div>
+<div>
+<span id="loktra_img"></span>
+<span id=""></span>
+<span id=""></span>
+<span id=""></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-lg-3" id="chat_widget"></div>
+<div class="col-md-9 col-lg-9" id="map_widget">
+  <div class="row" id="map"></div>
+</div>
+</div>
+</div>
+</section>
+<script type="text/javascript">
+var a=['/Common_files/js/jquery.min.js',
+       '/Common_files/js/bootstrap.min.js',
+       'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js',
+       'dashboard1.js'
+       ];
+ a.forEach(function(src) {
+  var element = document.createElement('script');
+  element.src = src;
+  element.async = false; 
+  document.body.appendChild(element);
+});
+</script>
+</body>
+</html>

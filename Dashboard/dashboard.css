@@ -1,0 +1,168 @@
+.row
+{
+  margin-left:0px;
+  margin-right:0px;
+}
+#dashboard_head
+{
+  color:#999999;
+  font-weight:600;
+  font-size:24px;
+  padding-left:0px;
+}
+#powered_head
+{
+  font-style:italic;
+  
+}
+#chat_widget
+{
+  background-color:white;
+  border: 1px solid;
+  padding: 10px;
+}
+.default_img
+{
+  width: 100%;
+   height: 30px;
+    border-radius: 50%;
+    background-color:#0077CC;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+.mem_count
+{
+  font-weight:bold;
+}
+.mem_btn
+{
+  color:white;
+  font-weight:600;
+  background-color:#333333;
+  text-align:center;
+  font-size:12px;
+}
+.active_count
+{
+  font-size:10px;
+  font-weight:bold;
+  text-align:center;
+  border-radius:50%;
+  color:white;
+  padding:3px;
+  cursor:pointer;
+  border:1px solid;
+}
+.online
+{
+  background-color:#67D233 !important;
+}
+.offline
+{
+  background-color:#FF6662 !important;
+}
+.unavailable
+{
+  background-color:#333333 !important;
+}
+.online_circle
+{
+  background-color:#67D233 ;
+}
+.offline_circle
+{
+  background-color:#FF6662 ;
+}
+.unavailable_circle
+{
+  background-color:#333333 ;
+}
+.count_cat
+{
+  margin-top:15px;
+  margin-bottom:8px;
+  
+}
+.all_dropdown
+{
+  font-size: 10px;
+  padding: 3px;
+  font-weight: bold;
+  padding-top:4px;
+  padding-bottom:4px;
+}
+#filter_type
+{
+  width:100%;
+}
+.all_span
+{
+  float:right;
+  color:#9D9D9D;
+}
+.chat_img
+{
+ width:100%;
+ height:30px;
+ border-radius:50%;
+}
+.img_col
+{
+ padding-left:5px;
+ padding-right:5px;
+}
+.chat
+{
+  margin-bottom:10px;
+}
+.cust_chat_agent
+{
+  color:#1F6AFF;
+  font-size:11px;
+}
+.name_col
+{
+  padding-left:5px;
+  padding-right:3px;
+}
+.cust_chat_name
+{
+  font-size:13px;
+}
+.circle_round
+{
+    width:8px;
+    background-color:#00DE2E;
+    height:8px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    right: 6px;
+    bottom: 2px;
+}
+.online_circle
+{
+  background-color:#00DE2E;
+}
+.offline_circle
+{
+  background-color: 
+}
+.parent_circle_round
+{
+    width: 11px;
+    background-color:white;
+    height: 11px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    right: 5px;
+    bottom: 1px;
+}
+#map
+{
+   height:600px;
+}
